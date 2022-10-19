@@ -7,12 +7,12 @@ const Contents = () => {
       </p>
       <h2>Favorite</h2>
       <ul>
-        <ul>音楽</ul>
-        <ul>映画</ul>
-        <ul>筋トレ</ul>
-        <ul>英会話</ul>
-        <ul>データ分析、統計</ul>
-        <ul>プログラミング、個人開発</ul>
+        <li>音楽</li>
+        <li>映画</li>
+        <li>筋トレ</li>
+        <li>英会話</li>
+        <li>データ分析、統計</li>
+        <li>プログラミング、個人開発</li>
       </ul>
       <h2>Contact</h2>
       何かご相談があればTwitterのDMからどうぞ。

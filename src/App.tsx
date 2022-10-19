@@ -6,23 +6,31 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <BodyWrapper>
-        <Avater />
-        <Contents />
-        <Footer />
-      </BodyWrapper>
-    </div>
+    <>
+      <HeightControler>
+        <ContentsWrapper>
+          <Avater />
+          <Contents />
+        </ContentsWrapper>
+      </HeightControler>
+      <Footer />
+    </>
   );
 }
 
 export default App;
 
-const BodyWrapper = styled.div`
+const HeightControler = styled.div`
+  height: 100%;
+`;
+
+const ContentsWrapper = styled.div`
   margin-left: auto;
   margin-right: auto;
   max-width: 28rem;
   padding: 2rem;
+  --tw-text-opacity: 1;
+  color: rgba(55, 65, 81, var(--tw-text-opacity));
   @media (min-width: 640px) {
     max-width: 42rem;
     padding: 1rem;
