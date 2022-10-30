@@ -20,21 +20,24 @@ const Avater = () => {
         <Avaterimage src={Icon} alt="icon"></Avaterimage>
       </Avaterwrapper>
       <SocialIconFlow>
-        <Link href="https://twitter.com/ryopenguin" target="_blank">
+        <SocialLink href="https://twitter.com/ryopenguin" target="_blank">
           <SocialIcons>
             <FontAwesomeIcon icon={faTwitter} />
           </SocialIcons>
-        </Link>
-        <Link href="https://github.com/ryokaneoka0406" target="_blank">
+        </SocialLink>
+        <SocialLink href="https://github.com/ryokaneoka0406" target="_blank">
           <SocialIcons>
             <FontAwesomeIcon icon={faGithub} />
           </SocialIcons>
-        </Link>
-        <Link href="https://www.linkedin.com/in/ryokaneoka/" target="_blank">
+        </SocialLink>
+        <SocialLink
+          href="https://www.linkedin.com/in/ryokaneoka/"
+          target="_blank"
+        >
           <SocialIcons>
             <FontAwesomeIcon icon={faLinkedin} />
           </SocialIcons>
-        </Link>
+        </SocialLink>
       </SocialIconFlow>
     </>
   );
@@ -68,6 +71,6 @@ const SocialIcons = styled.li`
   line-height: 2.25rem;
 `;
 
-const Link = styled.a`
+const SocialLink = styled.a`
   color: inherit;
 `;
