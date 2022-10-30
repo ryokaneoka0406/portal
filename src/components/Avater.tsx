@@ -19,10 +19,23 @@ const Avater = () => {
       <Avaterwrapper>
         <Avaterimage src={Icon} alt="icon"></Avaterimage>
       </Avaterwrapper>
-
-      <FontAwesomeIcon icon={faTwitter as IconDefinition} />
-      <FontAwesomeIcon icon={faLinkedin as IconDefinition} />
-      <FontAwesomeIcon icon={faGithub as IconDefinition} />
+      <SocialIconFlow>
+        <Link href="https://twitter.com/ryopenguin" target="_blank">
+          <SocialIcons>
+            <FontAwesomeIcon icon={faTwitter} />
+          </SocialIcons>
+        </Link>
+        <Link href="https://github.com/ryokaneoka0406" target="_blank">
+          <SocialIcons>
+            <FontAwesomeIcon icon={faGithub} />
+          </SocialIcons>
+        </Link>
+        <Link href="https://www.linkedin.com/in/ryokaneoka/" target="_blank">
+          <SocialIcons>
+            <FontAwesomeIcon icon={faLinkedin} />
+          </SocialIcons>
+        </Link>
+      </SocialIconFlow>
     </>
   );
 };
@@ -36,5 +49,25 @@ const Avaterimage = styled.img`
 `;
 
 const Avaterwrapper = styled.div`
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+`;
+
+const SocialIconFlow = styled.ul`
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  padding-left: 0;
+`;
+
+const SocialIcons = styled.li`
+  list-style: none;
+  margin: 0.5rem 1rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+`;
+
+const Link = styled.a`
+  color: inherit;
 `;
