@@ -20,11 +20,6 @@ const Contents = () => {
       何らか書いたり発表したりしたものです。
       <ul>
         <li>
-          <TextLink href="https://schoo.jp/class/8011" target="_blank">
-            データ活用の基礎をつくるKPI設計
-          </TextLink>
-        </li>
-        <li>
           <TextLink
             href="https://tech.smarthr.jp/entry/kpi-and-product-vision"
             target="_blank"
@@ -32,6 +27,20 @@ const Contents = () => {
             KPIを追いかけていたらプロダクトビジョンにたどり着いた話
           </TextLink>
         </li>
+        <li>
+          <TextLink
+            href="https://tech.smarthr.jp/entry/long-hard-road-of-product-vision"
+            target="_blank"
+          >
+            プロダクトビジョンを決め、活用するまでの長い道のり
+          </TextLink>
+        </li>
+        <li>
+          <TextLink href="https://schoo.jp/class/8011" target="_blank">
+            データ活用の基礎をつくるKPI設計
+          </TextLink>
+        </li>
+
         <li>
           <TextLink
             href="https://speakerdeck.com/ryokaneoka0406/xi-hui-kontentu"
